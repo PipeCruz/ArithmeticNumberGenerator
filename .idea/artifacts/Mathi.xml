@@ -1,0 +1,20 @@
+<component name="ArtifactManager">
+  <artifact type="javafx" name="Mathi">
+    <output-path>$PROJECT_DIR$/out/artifacts/Mathi</output-path>
+    <properties id="javafx-properties">
+      <options>
+        <option name="appClass" value="math.Main" />
+        <option name="description" value="" />
+        <option name="htmlPlaceholderId" value="" />
+        <option name="title" value="ARITHMETIC" />
+        <option name="vendor" value="fcruz" />
+        <option name="version" value="" />
+      </options>
+    </properties>
+    <root id="root">
+      <element id="archive" name="Mathi.jar">
+        <element id="module-output" name="Mathi" />
+      </element>
+    </root>
+  </artifact>
+</component>
