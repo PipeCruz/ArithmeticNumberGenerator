@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="currentScene" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#checkIn" prefHeight="400.0" prefWidth="598.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="math.IntroScene">
+<AnchorPane fx:id="currentScene" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#checkIn" prefHeight="400.0" prefWidth="598.0" xmlns="http://javafx.com/javafx/8.0.251" xmlns:fx="http://javafx.com/fxml/1" fx:controller="math.IntroScene">
    <BorderPane layoutX="160.0" layoutY="80.0" prefHeight="241.0" prefWidth="263.0">
       <center>
          <TextField fx:id="numOfQuestions" alignment="CENTER" onKeyPressed="#checkIn" BorderPane.alignment="CENTER">
@@ -33,12 +33,12 @@
          <Font name="Comic Sans MS" size="16.0" />
       </font>
    </Label>
-   <Button fx:id="helpButton" layoutX="27.0" layoutY="295.0" mnemonicParsing="false" onAction="#help" prefHeight="52.0" prefWidth="92.0" text="HELP" textAlignment="CENTER">
+   <Button layoutX="27.0" layoutY="295.0" mnemonicParsing="false" onAction="#help" prefHeight="52.0" prefWidth="92.0" text="HELP" textAlignment="CENTER">
       <font>
          <Font name="Dubai Bold" size="21.0" />
       </font>
    </Button>
-   <Button fx:id="exitButton" layoutX="488.0" layoutY="295.0" mnemonicParsing="false" onAction="#exit" prefHeight="52.0" prefWidth="92.0" text="EXIT" textAlignment="CENTER">
+   <Button  layoutX="488.0" layoutY="295.0" mnemonicParsing="false" onAction="#exit" prefHeight="52.0" prefWidth="92.0" text="EXIT" textAlignment="CENTER">
       <font>
          <Font name="Dubai Bold" size="21.0" />
       </font>

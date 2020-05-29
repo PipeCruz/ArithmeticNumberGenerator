@@ -1,10 +1,9 @@
 package math;
 
-import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.input.KeyCode;
@@ -13,16 +12,21 @@ import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
 public class IntroScene {
+    //instance fields
     private static int totalNumber;
-    public TextField numOfQuestions;
-    public Label invalidLabel;
-    public AnchorPane currentScene;
-    public Button helpButton, exitButton;
+    @FXML
+    private TextField numOfQuestions;
+    @FXML
+    private Label invalidLabel;
+    @FXML
+    private AnchorPane currentScene;
 
+    //returns total number of questions
     public static int getTotalNumber() {
         return totalNumber;
     }
 
+    //when it starts, this sets the number of questions
     public void checkIn(KeyEvent keyEvent) throws InterruptedException {
         invalidLabel.setVisible(false);
 
@@ -48,12 +52,13 @@ public class IntroScene {
         }
     }
 
-    public void help(ActionEvent actionEvent) {
+    //when they click help button
+    public void help() {
         AlertBox.display("HELP","Enter a whole number to generate arithmetic problems!" +
                 "\nType exit to close at any time");
     }
-
-    public void exit(ActionEvent actionEvent) {
+    //when they click exit button
+    public void exit() {
         AlertBox.display("BYE","See you again!");
         System.exit(0);
     }

@@ -7,6 +7,8 @@ import javafx.scene.control.*;
 import javafx.geometry.*;
 
 class AlertBox {
+    //this class is an alert message dialog
+    //similar to a joptionpane
 
     static void display(String title, String message) {
         Stage window = new Stage();

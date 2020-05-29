@@ -10,7 +10,7 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
-        Parent root = FXMLLoader.load(getClass().getResource("welcome.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("Introduction.fxml"));
         primaryStage.setTitle("Arithmetic Problem Generator");
         primaryStage.setScene(new Scene(root, 600,  400));
         primaryStage.setResizable(false);
